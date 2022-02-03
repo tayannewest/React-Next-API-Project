@@ -37,28 +37,31 @@ const Blurb = styled.div`
 `
 
 const Info = styled.div`
-  width: 30vw;
   height: 300px;
+  width: 100%;
   background-color: white;
   border-radius: 10px;
   border-style: outset;
   display: flex;
   flex-direction: column;
   text-align: center;
+  padding: 10px;
   margin: auto;
   z-index: 999;
 
   h1 {
     text-align: left;
   }
+
+  a:hover {
+    color: pink;
+  }
 `
 
 const GridContainer = styled.div`
-  display: grid;
-  // width: 100fr;
-  z-index: 999;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
-  grid-template-columns: repeat(1, 1fr);
   &::-webkit-scrollbar{
         display: none;
     };
@@ -79,29 +82,32 @@ const Contact = () => {
           </Card>
           <h1>Hello</h1>
           <Blurb>
-            <h1>Meet the devs yeah</h1>
+            <h1>come on jesus</h1>
           </Blurb>
           <Info>
             <h1>Nate</h1>
             <p>Here goes a little personal info before the contact info</p>
-            <ul>
-              <li>Portfolio</li>
-              <li>GitHub</li>
-              <li>Email</li>
-            </ul>
+            <li><a href="https://coffeegremlin.com/" target="_blank" rel="noreferrer">Portfolio</a></li>
+              <li><a href="https://github.com/coffeegremlin" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/nathanmausert/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li>Email</li> 
+              {/* natemausert@gmail.com */}
           </Info>
           <Info>
             <h1>Jeremy</h1>
             <p>Here goes a little personal info before the contact info</p>
-              <li>Portfolio</li>
-              <li>GitHub</li>
+            <li><a href="https://www.darkmeowproductions.com/" target="_blank" rel="noreferrer">Portfolio</a></li>
+              <li><a href="https://github.com/Darkskittlz" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/jeremydev/" target="_blank" rel="noreferrer">LinkedIn</a></li>
               <li>Email</li>
+              {/* Darkskiiittles@gmail.com */}
           </Info>
           <Info>
             <h1>Tay</h1> 
             <p>Here goes a little personal info before the contact info</p>
-              <li>Portfolio</li>
-              <li>GitHub</li>
+              <li><a href="https://taywest.dev/" target="_blank" rel="noreferrer">Portfolio</a></li>
+              <li><a href="https://github.com/tayannewest" target="_blank" rel="noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/tayannewest/" target="_blank" rel="noreferrer">LinkedIn</a></li>
               <li>Email</li>
           </Info>
         </GridContainer>
